@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+}
+
+main {
+    margin-left: 230px; /* Adjust to match sidebar width */
+    padding-top: 70px; /* Adjust to match header height */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search-bar input {
+    width: 500px;
+    padding: 11px;
+    border-radius: 20px;
+    border: 1px solid #858484;
+    background-color: #2d2c2c;
+    color: white;
+}
+
+.search-bar button {
+    padding: 10px 18px;
+    background-color: #313131;
+    border: 1px solid #616060;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.user-icons .user-icon {
+    height: 30px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    width: 230px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    padding: 20px;
+    background-color: #000000;
+    height: 100vh;
+    overflow-y: auto;
+    color: rgb(255, 255, 255);
+    z-index: 1000;
+}
+/* Add this to your existing CSS */
+.sidebar::-webkit-scrollbar {
+    width: 10px; /* or any smaller size */
+    height: 20px; /* adjust the height as needed */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #888; /* color of the scrollbar thumb */
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* color when hovered over */
+}
+
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+  
+.sidebar h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+
+.filters {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto multiple lines */
+    gap: 10px;
+    margin-bottom: 10px;
+    z-index: 1000;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.filters button {
+    padding: 10px;
+    background-color: #313131;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    transition: background-color 0.3s; /* Optional: Adds a transition effect */
+}
+
+.filters button:hover {
+    background-color: #575757; /* Optional: Changes color on hover */
+}
+
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.video-card {
+    background-color: #202020;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #aaa;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #202020;
+    margin-top: 50px;
+}
